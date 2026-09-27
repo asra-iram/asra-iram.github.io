@@ -1,0 +1,456 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<meta name="description" content="Asra Iram - Software Engineer and AI Data and Evaluation Specialist. Portfolio, experience and skills." />
+<meta name="author" content="Asra Iram" />
+<meta property="og:title" content="Asra Iram - Software Engineer" />
+<meta property="og:description" content="Software Engineer and AI Data and Evaluation Specialist. Available for remote work." />
+<meta property="og:type" content="website" />
+<style>
+html{-webkit-text-size-adjust:100%}
+img{max-width:100%}
+[hidden]{display:none!important}
+</style>
+<title>Asra Iram Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800&family=IBM+Plex+Mono:wght@400;500&family=Source+Sans+3:ital,wght@0,400;0,600;1,400&display=swap">
+
+<style>
+:root{
+  color-scheme: light;
+  --band:#0E3B44;
+  --band-ink:#FFFFFF;
+  --band-sub:#9FD6CF;
+  --band-meta:#CFE3E1;
+  --paper:#F2F5F6;
+  --surface:#FFFFFF;
+  --tint:#EAF1F0;
+  --ink:#1B2228;
+  --muted:#5C646E;
+  --faint:#89919B;
+  --rule:#D6DEDD;
+  --accent:#12615E;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    color-scheme: dark;
+    --band:#0A2C33;
+    --band-ink:#F2F7F6;
+    --band-sub:#6FC4BC;
+    --band-meta:#9FBCB9;
+    --paper:#0E1316;
+    --surface:#151B1F;
+    --tint:#16302F;
+    --ink:#E8EDEF;
+    --muted:#9AA3AC;
+    --faint:#6E7780;
+    --rule:#26302F;
+    --accent:#5CCCC4;
+  }
+}
+:root[data-theme="dark"]{
+  color-scheme: dark;
+  --band:#0A2C33;
+  --band-ink:#F2F7F6;
+  --band-sub:#6FC4BC;
+  --band-meta:#9FBCB9;
+  --paper:#0E1316;
+  --surface:#151B1F;
+  --tint:#16302F;
+  --ink:#E8EDEF;
+  --muted:#9AA3AC;
+  --faint:#6E7780;
+  --rule:#26302F;
+  --accent:#5CCCC4;
+}
+
+*{box-sizing:border-box}
+body{
+  margin:0;
+  background:var(--paper);
+  color:var(--ink);
+  font-family:"Source Sans 3", ui-sans-serif, system-ui, sans-serif;
+  font-size:16.5px;
+  line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+}
+.page{
+  max-width:900px;
+  margin:0 auto;
+  padding-inline:16px;
+  padding-block:0 60px;
+}
+.sheet{
+  background:var(--surface);
+  border:1px solid var(--rule);
+}
+
+/* ---------- hero band ---------- */
+.band{
+  position:relative;
+  background-color:var(--band);
+  background-image:linear-gradient(90deg, rgba(8,30,36,0.94) 0%, rgba(8,30,36,0.72) 55%, rgba(8,30,36,0.50) 100%), url("hero.jpg");
+  background-size:cover;
+  background-position:center right;
+  color:var(--band-ink);
+  padding:46px 34px 40px;
+  border-bottom:3px solid var(--accent);
+}
+.band h1{
+  font-family:"Archivo", ui-sans-serif, system-ui, sans-serif;
+  font-weight:800;
+  font-size:clamp(2rem, 6vw, 2.9rem);
+  line-height:1.02;
+  letter-spacing:0.01em;
+  margin:0 0 10px;
+  text-wrap:balance;
+}
+.band .role{
+  font-family:"Archivo", ui-sans-serif, system-ui, sans-serif;
+  font-weight:600;
+  font-size:0.95rem;
+  letter-spacing:0.06em;
+  color:var(--band-sub);
+  margin:0 0 22px;
+}
+.band .meta{
+  font-family:"IBM Plex Mono", ui-monospace, monospace;
+  font-size:0.76rem;
+  color:var(--band-meta);
+  margin:0;
+  line-height:1.85;
+  word-break:break-word;
+}
+.band .meta span{white-space:nowrap}
+.sep{opacity:0.45;padding:0 8px}
+
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px}
+.chip{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  border:1px solid rgba(255,255,255,0.22);
+  border-radius:2px;
+  padding:6px 10px;
+  font-family:"IBM Plex Mono", ui-monospace, monospace;
+  font-size:0.74rem;
+  color:var(--band-meta);
+  text-decoration:none;
+  background:rgba(255,255,255,0.04);
+}
+a.chip:hover{border-color:var(--band-sub);color:var(--band-sub)}
+.copy{
+  border:0;background:transparent;color:var(--band-sub);
+  font-family:inherit;font-size:0.68rem;cursor:pointer;padding:0;
+  letter-spacing:0.04em;
+}
+.copy:hover{text-decoration:underline}
+.copy:focus-visible,a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+
+/* ---------- inner ---------- */
+.inner{padding:0 34px 40px}
+
+.bar{
+  display:flex;
+  align-items:center;
+  background:var(--tint);
+  border-left:4px solid var(--accent);
+  padding:8px 14px;
+  margin:34px 0 0;
+}
+.bar h2{
+  font-family:"Archivo", ui-sans-serif, system-ui, sans-serif;
+  font-size:0.8rem;
+  font-weight:700;
+  letter-spacing:0.16em;
+  text-transform:uppercase;
+  color:var(--accent);
+  margin:0;
+}
+
+p{margin:0 0 14px;max-width:70ch}
+.lede{margin-top:18px;color:var(--muted)}
+
+/* ---------- tracks ---------- */
+.tracks{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:16px;
+  margin-top:20px;
+}
+.track{
+  border:1px solid var(--rule);
+  border-top:3px solid var(--accent);
+  padding:18px 18px 20px;
+  background:var(--surface);
+}
+.track h3{
+  font-family:"Archivo", ui-sans-serif, system-ui, sans-serif;
+  font-size:1rem;font-weight:700;margin:0 0 8px;color:var(--ink);
+}
+.track p{font-size:0.93rem;color:var(--muted);margin:0 0 12px}
+.tags{display:flex;flex-wrap:wrap;gap:6px;list-style:none;padding:0;margin:0}
+.tags li{
+  font-family:"IBM Plex Mono", ui-monospace, monospace;
+  font-size:0.69rem;
+  background:var(--tint);
+  color:var(--accent);
+  padding:3px 7px;
+  line-height:1.5;
+}
+
+/* ---------- education ---------- */
+.edu{padding:14px 0;border-bottom:1px solid var(--rule)}
+.edu:last-child{border-bottom:0}
+.ehead{
+  display:flex;flex-wrap:wrap;gap:2px 16px;
+  align-items:baseline;justify-content:space-between;
+}
+.edu h3{
+  font-family:"Archivo", ui-sans-serif, system-ui, sans-serif;
+  font-size:1rem;font-weight:700;margin:0;color:var(--ink);
+}
+.edu .org{margin:2px 0 0;font-size:0.92rem;color:var(--muted);font-style:italic}
+.edu .meta{
+  margin:4px 0 0;
+  font-family:"IBM Plex Mono", ui-monospace, monospace;
+  font-size:0.72rem;color:var(--faint);
+}
+.when{
+  font-family:"IBM Plex Mono", ui-monospace, monospace;
+  font-size:0.74rem;font-weight:500;color:var(--accent);
+  white-space:nowrap;font-variant-numeric:tabular-nums;
+}
+
+/* ---------- experience ---------- */
+.job{padding:20px 0;border-bottom:1px solid var(--rule)}
+.job:last-child{border-bottom:0}
+.jhead{
+  display:flex;flex-wrap:wrap;gap:2px 16px;
+  align-items:baseline;justify-content:space-between;
+}
+.jtitle{
+  font-family:"Archivo", ui-sans-serif, system-ui, sans-serif;
+  font-size:1.06rem;font-weight:700;margin:0;color:var(--ink);
+}
+.badge{
+  display:inline-block;
+  font-family:"IBM Plex Mono", ui-monospace, monospace;
+  font-size:0.6rem;letter-spacing:0.09em;text-transform:uppercase;
+  background:var(--accent);color:var(--surface);
+  padding:2px 6px;margin-left:8px;vertical-align:0.18em;
+}
+.jorg{margin:3px 0 12px;font-size:0.9rem;color:var(--faint);font-style:italic}
+.job ul{margin:0;padding:0;list-style:none;display:grid;gap:7px}
+.job li{
+  position:relative;padding-left:18px;
+  font-size:0.95rem;color:var(--muted);max-width:70ch;
+}
+.job li::before{
+  content:"";position:absolute;left:0;top:0.65em;
+  width:9px;height:2px;background:var(--accent);
+}
+
+/* ---------- skills grid ---------- */
+.grid{margin-top:20px;border-top:1px solid var(--rule)}
+.grow{
+  display:grid;
+  grid-template-columns:190px 1fr;
+  border-bottom:1px solid var(--rule);
+}
+.grow .k{
+  background:var(--tint);
+  padding:11px 14px;
+  font-family:"Archivo", ui-sans-serif, system-ui, sans-serif;
+  font-size:0.78rem;font-weight:700;color:var(--ink);
+  letter-spacing:0.02em;
+}
+.grow .v{
+  padding:11px 16px;
+  font-size:0.92rem;color:var(--muted);
+}
+
+/* ---------- contact ---------- */
+.cta{
+  margin-top:34px;
+  background:var(--band);
+  color:var(--band-ink);
+  padding:30px 34px 32px;
+}
+.cta h2{
+  font-family:"Archivo", ui-sans-serif, system-ui, sans-serif;
+  font-size:1.3rem;font-weight:700;margin:0 0 8px;color:var(--band-ink);
+}
+.cta p{color:var(--band-meta);font-size:0.95rem;margin:0;max-width:60ch}
+.note{
+  font-family:"IBM Plex Mono", ui-monospace, monospace;
+  font-size:0.7rem;color:var(--band-meta);opacity:0.75;
+  margin-top:22px;
+}
+
+@media (max-width:600px){
+  .band{padding:30px 20px 26px}
+  .inner{padding:0 20px 32px}
+  .cta{padding:26px 20px 28px}
+  .grow{grid-template-columns:1fr}
+  .grow .k{padding-bottom:4px}
+  .grow .v{padding-top:6px}
+}
+@media (prefers-reduced-motion:reduce){
+  *{transition:none!important;animation:none!important}
+}
+</style>
+</head>
+<body>
+<div class="page">
+ <div class="sheet">
+
+  <div class="band">
+    <h1>Asra Iram</h1>
+    <p class="role">Software Engineer   |   AI Data &amp; Evaluation Specialist</p>
+    <p class="meta">
+      <span>Malegaon, Maharashtra, India</span><span class="sep">|</span><span>Open to full-time, contract and freelance work</span><span class="sep">|</span><span>Remote</span>
+    </p>
+    <div class="chips">
+      <span class="chip">Dynamica4321@gmail.com <button class="copy" data-copy="Dynamica4321@gmail.com">copy</button></span>
+      <span class="chip">+91 70201 97370 <button class="copy" data-copy="+917020197370">copy</button></span>
+      <a class="chip" href="https://www.linkedin.com/in/asra-mohammad-6531233b0/">LinkedIn</a>
+    </div>
+  </div>
+
+  <div class="inner">
+
+    <div class="bar"><h2>Profile</h2></div>
+    <p class="lede">Computer science graduate with nearly three years as a software engineer, building applications and the interfaces on top of them, and seven years of independent work on the data behind AI systems: annotation, model training, evaluation and search relevance.</p>
+    <p class="lede">Knowing how software is built and shipped, from the interface down to the database, makes for sharper judgement when assessing what it produces. Works remotely, to written guidelines, without supervision.</p>
+
+    <div class="bar"><h2>Two tracks</h2></div>
+    <div class="tracks">
+      <div class="track">
+        <h3>Software Engineering</h3>
+        <p>Building application logic and the interfaces on top of it, and carrying a release through to client rollout and user acceptance.</p>
+        <ul class="tags">
+          <li>Python</li><li>Java</li><li>PHP</li><li>JavaScript</li>
+          <li>HTML5</li><li>CSS3</li><li>Bootstrap</li>
+          <li>MS-SQL</li><li>MySQL</li><li>implementation</li>
+        </ul>
+      </div>
+      <div class="track">
+        <h3>AI Data &amp; Evaluation</h3>
+        <p>Labelling, rating and validating the data that trains and measures language models and search systems, applying detailed written rubrics consistently across high volumes.</p>
+        <ul class="tags">
+          <li>data annotation</li><li>model training</li><li>prompt evaluation</li>
+          <li>content review</li><li>search relevance</li><li>search ads rating</li>
+          <li>transcription</li><li>translation</li><li>data validation</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="bar"><h2>Education</h2></div>
+    <div class="edu">
+      <div class="ehead">
+        <h3>Bachelor of Science - Computer</h3>
+        <span class="when">Oct 2015</span>
+      </div>
+      <p class="org">J.A.E.T. Society's Arts, Science &amp; Commerce Girls College, Malegaon (Savitribai Phule Pune University)</p>
+      <p class="meta">First Class | Computer Science as subsidiary subject</p>
+    </div>
+    <div class="edu">
+      <div class="ehead"><h3>Higher Secondary Certificate (HSC)</h3></div>
+      <p class="org">The Malegaon High School and Jr. College, Maharashtra State Board</p>
+    </div>
+    <div class="edu">
+      <div class="ehead"><h3>Secondary School Certificate (SSC)</h3></div>
+      <p class="org">The Malegaon High School and Jr. College, Maharashtra State Board</p>
+    </div>
+
+    <div class="bar"><h2>Professional experience</h2></div>
+
+    <div class="job">
+      <div class="jhead">
+        <h3 class="jtitle">Software Engineer</h3>
+        <span class="when">Oct 2016 - Jun 2019</span>
+      </div>
+      <p class="jorg">Finacus InfoTech Pvt. Ltd.</p>
+      <ul>
+        <li>Developed and maintained server-side application modules in Python, Java and PHP, covering business logic, data processing and backend integration.</li>
+        <li>Extended and refactored existing codebases, resolving defects and adding functionality against client requirements and delivery timelines.</li>
+        <li>Developed and maintained responsive user interfaces in HTML5, CSS3 and Bootstrap, translating design specifications into production-ready screens.</li>
+        <li>Verified layouts across browsers, resolutions and devices, resolving rendering and compatibility issues ahead of each release.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="jhead">
+        <h3 class="jtitle">AI Data Specialist &amp; Evaluator<span class="badge">Current</span></h3>
+        <span class="when">Jun 2019 - Present</span>
+      </div>
+      <p class="jorg">Independent, remote contract work</p>
+      <ul>
+        <li>Annotate and label text, image and audio data to client specification, holding quality against sampled audit review.</li>
+        <li>Evaluate AI model responses for accuracy, relevance, tone and policy compliance, and write structured feedback that feeds back into training.</li>
+        <li>Rate search results and search advertisements against published relevance guidelines, applying consistent judgement across high query volumes.</li>
+        <li>Transcribe and translate text and speech, and review dubbing and lip-sync output for timing and naturalness.</li>
+        <li>Validate AI training datasets, flagging mislabelled, ambiguous and out-of-guideline items before delivery.</li>
+      </ul>
+    </div>
+
+    <div class="bar"><h2>Core competencies</h2></div>
+    <div class="grid">
+      <div class="grow"><div class="k">Programming</div><div class="v">Python | Java | JavaScript | PHP | SQL</div></div>
+      <div class="grow"><div class="k">AI &amp; Data</div><div class="v">Data annotation and labelling | AI model training | prompt evaluation | content review and quality rating | data validation</div></div>
+      <div class="grow"><div class="k">Search Evaluation</div><div class="v">Search relevance rating | search engine evaluation | search advertisement quality rating</div></div>
+      <div class="grow"><div class="k">Linguistic</div><div class="v">Transcription | translation | dubbing and lip-sync review | multilingual evaluation</div></div>
+      <div class="grow"><div class="k">Front-End</div><div class="v">HTML5 | CSS3 | Bootstrap | responsive layout | cross-browser verification</div></div>
+      <div class="grow"><div class="k">Databases</div><div class="v">MS-SQL Server | MySQL | MySQL Workbench | SQL for data preparation and validation</div></div>
+      <div class="grow"><div class="k">Software Delivery</div><div class="v">Implementation and rollout | requirement gathering | client onboarding | UAT</div></div>
+      <div class="grow"><div class="k">Professional</div><div class="v">Client communication | team leadership | documentation | remote collaboration</div></div>
+      <div class="grow"><div class="k">Languages</div><div class="v">English, Hindi, Marathi and Urdu</div></div>
+    </div>
+
+  </div>
+
+  <div class="cta">
+    <h2>Get in touch</h2>
+    <p>Available for remote AI data and evaluation work, and for software engineering roles. Email is the fastest route.</p>
+    <div class="chips">
+      <span class="chip">Dynamica4321@gmail.com <button class="copy" data-copy="Dynamica4321@gmail.com">copy</button></span>
+      <a class="chip" href="https://www.linkedin.com/in/asra-mohammad-6531233b0/">LinkedIn profile</a>
+    </div>
+    <p class="note">Asra Iram | Malegaon, Maharashtra, India</p>
+  </div>
+
+ </div>
+</div>
+
+<script>
+document.querySelectorAll('.copy').forEach(function(btn){
+  btn.addEventListener('click', function(){
+    var text = btn.getAttribute('data-copy');
+    function flash(){
+      var old = btn.textContent;
+      btn.textContent = 'copied';
+      setTimeout(function(){ btn.textContent = old; }, 1400);
+    }
+    function fallback(){
+      try{
+        var r = document.createRange();
+        r.selectNodeContents(btn.parentNode);
+        var s = window.getSelection();
+        s.removeAllRanges();
+        s.addRange(r);
+      }catch(e){}
+    }
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(text).then(flash).catch(fallback);
+    } else {
+      fallback();
+    }
+  });
+});
+</script>
+</body>
+</html>
