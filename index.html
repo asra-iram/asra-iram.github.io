@@ -204,6 +204,25 @@ p strong{color:var(--text)}
   color:var(--faint);margin:0 0 9px;
 }
 
+
+.projects{display:grid;grid-template-columns:repeat(auto-fit,minmax(310px,1fr));gap:16px}
+.proj{
+  background:var(--surface);border:1px solid var(--line);border-top:2px solid var(--cyan);
+  padding:20px 20px 22px;display:flex;flex-direction:column;
+}
+.proj:nth-child(even){border-top-color:var(--mag)}
+.proj h3{font-family:"Archivo",ui-sans-serif,system-ui,sans-serif;font-size:1.04rem;font-weight:700;margin:0 0 8px;color:var(--text)}
+.proj p{font-size:0.93rem;margin:0 0 14px;color:var(--muted);flex:1 1 auto}
+.proj .tags{margin-bottom:15px}
+.proj .go{display:flex;gap:9px;flex-wrap:wrap}
+.proj .go a{
+  font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:0.72rem;
+  text-decoration:none;padding:7px 12px;border:1px solid var(--line2);color:var(--muted);
+}
+.proj .go a:hover{border-color:var(--cyan);color:var(--cyan)}
+.proj .go a.solid{background:var(--cyan);border-color:var(--cyan);color:#05121A;font-weight:600}
+.proj .go a.solid:hover{background:#7DEDF2;color:#05121A}
+
 /* ---------- experience ---------- */
 .job{
   position:relative;padding:0 0 26px 26px;
@@ -294,6 +313,7 @@ footer{
       <a href="#profile">Profile</a>
       <a href="#tracks">Tracks</a>
       <a href="#stack">Stack</a>
+      <a href="#projects">Projects</a>
       <a href="#experience">Experience</a>
       <a href="#skills">Skills</a>
       <a href="#education">Education</a>
@@ -366,7 +386,52 @@ footer{
     </div>
   </div>
 
-  <div class="bar" id="experience"><span class="n">// 04</span><h2>Experience</h2></div>
+  <div class="bar" id="projects"><span class="n">// 04</span><h2>Projects</h2></div>
+  <div class="projects">
+
+    <div class="proj">
+      <h3>Loan and EMI Toolkit</h3>
+      <p>EMI on a reducing balance loan, the full month by month amortization schedule, and what an extra monthly payment actually saves in interest and in months. Built off three years on banking and payment software.</p>
+      <ul class="tags"><li>JavaScript</li><li>SVG charts</li><li>CSV export</li></ul>
+      <div class="go">
+        <a class="solid" href="https://asra-iram.github.io/loan-emi-toolkit/">Live demo</a>
+        <a href="https://github.com/asra-iram/loan-emi-toolkit">Source</a>
+      </div>
+    </div>
+
+    <div class="proj">
+      <h3>Powerloom Order and Billing Tracker</h3>
+      <p>Order and billing software for a powerloom unit: orders from loom to delivery, what each customer still owes, and a printable invoice with GST. Browser demo plus a real PHP and MySQL backend.</p>
+      <ul class="tags"><li>PHP</li><li>MySQL</li><li>PDO</li><li>JavaScript</li></ul>
+      <div class="go">
+        <a class="solid" href="https://asra-iram.github.io/powerloom-order-tracker/">Live demo</a>
+        <a href="https://github.com/asra-iram/powerloom-order-tracker">Source</a>
+      </div>
+    </div>
+
+    <div class="proj">
+      <h3>Multilingual Interface with RTL Support</h3>
+      <p>One form in English, Hindi, Marathi and Urdu. Urdu flips the whole layout right to left using CSS logical properties, loads a Nastaliq face, and keeps digits and phone numbers left to right.</p>
+      <ul class="tags"><li>CSS logical properties</li><li>RTL</li><li>i18n</li></ul>
+      <div class="go">
+        <a class="solid" href="https://asra-iram.github.io/multilingual-rtl-ui/">Live demo</a>
+        <a href="https://github.com/asra-iram/multilingual-rtl-ui">Source</a>
+      </div>
+    </div>
+
+    <div class="proj">
+      <h3>Student Result Management System</h3>
+      <p>Marks entry, automatic grading and printable marksheets. A student passes only if every subject clears the pass mark. The grading scale lives in a table rather than in code, and the sort column is whitelisted.</p>
+      <ul class="tags"><li>PHP</li><li>MySQL</li><li>SQL views</li><li>JavaScript</li></ul>
+      <div class="go">
+        <a class="solid" href="https://asra-iram.github.io/student-result-system/">Live demo</a>
+        <a href="https://github.com/asra-iram/student-result-system">Source</a>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="bar" id="experience"><span class="n">// 05</span><h2>Experience</h2></div>
 
   <div class="job">
     <div class="jhead">
@@ -397,7 +462,7 @@ footer{
     </ul>
   </div>
 
-  <div class="bar" id="skills"><span class="n">// 05</span><h2>Core competencies</h2></div>
+  <div class="bar" id="skills"><span class="n">// 06</span><h2>Core competencies</h2></div>
   <div class="grid">
     <div class="grow"><div class="k">Programming</div><div class="v">Python, Java, JavaScript, PHP, SQL</div></div>
     <div class="grow"><div class="k">AI and data</div><div class="v">Data annotation and labelling, AI model training, prompt evaluation, content review and quality rating, data validation</div></div>
@@ -409,7 +474,7 @@ footer{
     <div class="grow"><div class="k">Languages</div><div class="v">English, Hindi, Marathi, Urdu</div></div>
   </div>
 
-  <div class="bar" id="education"><span class="n">// 06</span><h2>Education</h2></div>
+  <div class="bar" id="education"><span class="n">// 07</span><h2>Education</h2></div>
   <div class="edu">
     <div class="ehead">
       <h3>Bachelor of Science - Computer</h3>
