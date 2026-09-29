@@ -211,7 +211,8 @@ p strong{color:var(--text)}
   padding:20px 20px 22px;display:flex;flex-direction:column;
 }
 .proj:nth-child(even){border-top-color:var(--mag)}
-.proj h3{font-family:"Archivo",ui-sans-serif,system-ui,sans-serif;font-size:1.04rem;font-weight:700;margin:0 0 8px;color:var(--text)}
+.proj h3{font-family:"Archivo",ui-sans-serif,system-ui,sans-serif;font-size:1.04rem;font-weight:700;margin:0 0 3px;color:var(--text)}
+.proj .kind{font-family:"JetBrains Mono",ui-monospace,monospace;font-size:0.68rem;letter-spacing:.14em;text-transform:uppercase;color:var(--cyan-dim);margin:0 0 9px}
 .proj p{font-size:0.93rem;margin:0 0 14px;color:var(--muted);flex:1 1 auto}
 .proj .tags{margin-bottom:15px}
 .proj .go{display:flex;gap:9px;flex-wrap:wrap}
@@ -482,6 +483,7 @@ footer{
 
     <div class="proj">
       <h3>Skybrawl</h3>
+      <p class="kind">Multiplayer game</p>
       <p>A jetpack deathmatch people join from their own phones with a four character room code. One browser hosts the match and sends the world out fifteen times a second over WebRTC; the others send input back and predict their own pilot so the controls stay immediate. Bots fill any empty slot.</p>
       <ul class="tags"><li>WebRTC</li><li>Canvas</li><li>Web Audio</li><li>Netcode</li><li>JavaScript</li></ul>
       <div class="go">
